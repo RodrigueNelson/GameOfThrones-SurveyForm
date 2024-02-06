@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GOT Character Survey</title>
+</head>
+<body>
+    <header class="header">
+        <h2>Game Of Thrones Character Survey</h2>
+        <p>This survey will let us know which GOT character is the people's favorite</p>
+    </header>
+    <form>
+        <fieldset>
+            <label id="name-label" for="name">Enter your Name:<input id="name" type="text" placeholder="John Dow" required /></label>
+            <label id="email-label" for="email">Enter your Email:<input id="email" type="email" placeholder="john.dow@something.com" required /></label>
+            <label for="dropdown"> Select your favorite Character:
+                <select id="dropdown" name="character">
+                    <option value="">(Please select one)</option>
+                    <option value="1">Jon Snow</option>
+                    <option value="2">Tyrion Lannister</option>
+                    <option value="3">Jamie Lannister</option>
+                    <option value="4">Cersi Lannister</option>
+                    <option value="5">Daenerys Targaryen</option>
+                    <option value="6">Aria Stark</option>
+                </select>
+            </label>
+            <label id="number-label" for="number">Give a calification from 0 to 10:<input id="number" type="number" min="0" max="0" pattern="[0-9]" placeholder="8" required /></label>
+        </fieldset>
+        <fieldset>
+            <legend>How did you consume the material of GOT?</legend>
+            <label for="series"><input name="material" id="series" type="radio" value="series" checked /> Series</label>
+            <label for="books"><input name="material" id="books" type="radio" value="books" /> Books</label>
+        </fieldset>
+        <fieldset>
+            <legend>Why is he/she your favorite character?</legend>
+            <label><input type="checkbox" value="1" checked/> Personality</label>
+            <label><input type="checkbox" value="2" /> History</label>
+            <label><input type="checkbox" value="3" /> Actions during the story</label>
+            <label><input type="checkbox" value="4" /> House</label>
+            <label><input type="checkbox" value="5" /> Other</label>
+        </fieldset>
+        <fieldset>
+            <label for="comments"> Share your opinion about your favorite character:
+                <textarea id="comments" rows="3" cols="25" placeholder="Jon was very..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
